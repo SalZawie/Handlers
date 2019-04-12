@@ -57,32 +57,33 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="14dp"
-        android:layout_marginTop="37dp"
+        android:layout_marginTop="24dp"
         android:hint="This will change."
         app:layout_constraintStart_toStartOf="@+id/testButton"
         app:layout_constraintTop_toBottomOf="@+id/testButton" />
 
     <Button
         android:id="@+id/btnRedirect"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="580dp"
+        android:layout_marginStart="31dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="88dp"
         android:onClick="redirect"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.6"
+        android:text="2 Activity"
+        app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="26dp"
-        android:layout_marginEnd="25dp"
-        android:text="Button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="32dp"
         android:onClick="btnClicker"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        android:text="3 Activity"
+        app:layout_constraintBottom_toBottomOf="@+id/btnRedirect"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnRedirect"
+        app:layout_constraintTop_toTopOf="@+id/btnRedirect" />
 </android.support.constraint.ConstraintLayout>
